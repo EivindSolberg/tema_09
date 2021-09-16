@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🥸 CSS fun</title>
+
+    <link rel="stylesheet" href="09_13_monday_css_fun.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <main>
+        <article>
+            <img src="https://source.unsplash.com/random/800x600" 
+            alt="Beskriv innholdet til bildet.Eksempel ovesikt">
+            <h1>Dette er en hovedoverskrift til artikkelen</h1>
+            <p class="byline"> Skrevet av Eivind Solberg</p>
+            <p class="ingress">Her er en ingress til artikkelen. Den brukes gjerne til å utheve det viktigste</p>
+            
+            <div class="article-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Minus sed porro recusandae similique possimus minima ut molestiae totam
+                    fugiat, illo ducimus natus 
+                    quae explicabo dolorem iste hic repellendus earum commodi
+                    deserunt consectetur? Debitis ut nisi delectus fugit, laborum commodi nesciunt velit
+                    aspernatur quis laboriosam maiores sunt, maxime nam provident. Quibusdam facilis illum,
+                    nulla repellendus aut praesentium tempore minus animi fuga, amet perspiciatis totam omnis,
+                    officia nostrum excepturi eos a at officiis cumque laboriosam molestias quo facere! Iste
+                    natus repudiandae sunt?
+                </p>
+                <blockquote>
+                    Brukes til å fremheve sitater.
+                </blockquote>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sunt
+                    incidunt sint officia quae maiores, doloremque quos unde rerum ad debitis
+                    iure dicta autem praesentium, rem odit temporibus eum optio!</p>
+            </div> <!-- article-body-->
+
+            <img class="hover_bilde" src="./5eeea355389655.59822ff824b72.gif" alt="">
+
+            <style>
+
+.hover_bilde{
+    transform: scale(0.5);
+    transition: all .5s ease-in-out; 
+
+}
+.hover_bilde:hover{
+    transform: scale(1);
+    transform: rotate(25deg);
+
+}
+
+
+
+            </style>
+        </article>
+    </main>
+</body>
+
+</html>

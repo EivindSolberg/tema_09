@@ -1,0 +1,86 @@
+
+:root{
+   --ff-bodytext: 'Inter', sans-serif;
+   --ff-heading: Georgia, serif;
+
+   --fs-900: clamp(2rem, 1rem + 5vw, 3rem);
+
+   --fs-400:1.125rem;
+
+   --clr-primary-900:hsl(180, 50%, 90%);
+   --clr-primary-800:hsl(180, 50%, 80%);
+   --clr-primary-700:hsl(180, 50%, 70%);
+   --clr-primary-600:hsl(180, 50%, 60%);
+   --clr-primary-500:hsl(180, 50%, 50%);
+   --clr-primary-400:hsl(180, 50%, 40%);
+   --clr-primary-300:hsl(180, 50%, 30%);
+   --clr-primary-200:hsl(180, 50%, 20%);
+   --clr-primary-100:hsl(180, 50%, 10%);
+
+ 
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--ff-bodytext) ;
+    font-weight: 400;
+    font-size: var(--fs-400);
+    background-color:    var(--clr-primary-100);
+    color: var(--clr-primary-900);
+}
+
+article{
+    display: grid;
+}
+
+article > *:not(img){
+    padding: 2em;
+}
+
+.article-body{
+    columns: 2 25ch;
+    gap:4rem;
+    column-rule: 2px solid var(--clr-primary-900);
+}
+
+blockquote{
+    margin:2em;
+}
+
+.article-body > p:first-child::first-letter{
+    font-size: var(--fs-900);
+    float:left;
+    margin-right:1rem;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+h1{
+    font-family: var(--ff-heading);
+    font-size: var(--fs-900);
+}
+
+@media (min-width:40em){
+    article{
+        grid-template-columns: 1fr 2fr;
+
+        max-width: 100em;
+        margin:auto;
+    }
+    
+    article > img {
+        grid-row: 1 / 8;
+        height: 100%;
+    } 
+
+
+}
